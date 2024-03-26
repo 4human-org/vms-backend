@@ -9,10 +9,6 @@ const userSchema = new mongoose.Schema({
     trim: true,
     lowercase: true,
   },
-  password: {
-    type: String,
-    required: [true, 'Password is required'],
-  },
   firstName: {
     type: String,
     required: [true, 'First name is required'],
@@ -22,6 +18,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Last name is required'],
     trim: true,
+  },
+  password: {
+    type: String,
+    required: [true, 'Password is required'],
   },
 }, {
 });
